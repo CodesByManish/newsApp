@@ -3,13 +3,16 @@ import './App.css';
 
 // class based component
 import React, { Component } from 'react'
+import NavBar from './components/NavBar';
+import News from './components/News';
 
 export default class App extends Component {
-   c =  "writer - manish laxane ";
+   
   render() {
     return (
-      <div className='container'>
-        <p>this is class based component --/ {this.c}</p>
+      <div className='' >
+         <NavBar/>
+         <News/>
       </div>
     )
   }
