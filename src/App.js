@@ -7,12 +7,15 @@ import NavBar from './components/NavBar';
 import News from './components/News';
 
 export default class App extends Component {
+  //  apiKey = process.env.REACT_APP_NEWS_API;
+   apiKey = "7db4440c6a4f4098a48b404ca55fa372";
    
   render() {
     return (
+      
       <div className='' >
          <NavBar/>
-         <News/>
+         <News apiKey={this.apiKey}/>
       </div>
     )
   }
